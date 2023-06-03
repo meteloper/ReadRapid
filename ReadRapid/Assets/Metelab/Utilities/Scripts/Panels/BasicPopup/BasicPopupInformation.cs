@@ -35,7 +35,7 @@ namespace Metelab.Panels
         private void OnClickedButtonAccept()
         {
             _OnClickAccept?.Invoke();
-            UIManager.Instance.BasicPopup.HidePanel();
+ //           UIManager.Instance.BasicPopup.HidePanel();
             Destroy(gameObject);
         }
 

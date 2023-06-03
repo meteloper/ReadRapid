@@ -8,17 +8,7 @@ namespace Metelab.CommonManagers
     public enum PanelTypes: int
     {
         None = -1,
-        MainMenu = 0,
-        WordAdd = 1,
-        WordLanguageSelection = 2,
-        WordList = 3,
-        WordTrainingLauncher = 4,
-        BasicPopup = 5,
-        WordTraining = 6,
-        NewWordListAddPopup = 7,
-        Settings = 8,
-        WordLearningPopup = 9,
-        AlertPopup=10,
+        Main = 0,
     }
 
 
@@ -28,8 +18,8 @@ namespace Metelab.CommonManagers
         [SerializeField] private List<MetePanel> PanelList = new List<MetePanel>();
         [SerializeField] private List<PanelTypes> ActivePanelList = new List<PanelTypes>();
         [SerializeField] private PanelTypes CurrentActivePanel;
-        [SerializeField] public BasicPopup BasicPopup { get { return (BasicPopup)PanelList[(int)PanelTypes.BasicPopup]; } }
-        [SerializeField] public AlertPopup AlertPopup { get { return (AlertPopup)PanelList[(int)PanelTypes.AlertPopup]; } }
+     //   [SerializeField] public BasicPopup BasicPopup { get { return (BasicPopup)PanelList[(int)PanelTypes.BasicPopup]; } }
+     //   [SerializeField] public AlertPopup AlertPopup { get { return (AlertPopup)PanelList[(int)PanelTypes.AlertPopup]; } }
 
         public override void EarlyInit()
         {
